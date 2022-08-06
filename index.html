@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Movie List</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+
+</head>
+
+<h1 class="text-center">Movie and Favorite Character List</h1>
+<body class="container">
+    <br>
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-movie">Movie</label>
+                        <input type="text" class="form-control" id="new-movie" placeholder="Movie Name">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-character">Favorite Character</label>
+                        <input type="text" class="form-control" id="new-character" placeholder="Character Name">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-viewed-date">Date Viewed</label>
+                        <input type="date" class="form-control" id="new-viewed-date" placeholder="Day Movie was Seen">
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <div>
+                    <button id="add" class="btn btn-success form-control">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <table id="list" class="table table-primary table-striped text-center">
+        <tr>
+            <th>Movie</th>
+            <th>Favorite Character</th>
+            <th>Date Viewed</th>
+            <th>Remove Movie</th>
+        </tr>
+    </table>
+
+    <script src="movielist.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
